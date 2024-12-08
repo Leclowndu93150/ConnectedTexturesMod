@@ -7,7 +7,6 @@ import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.ModContainer;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.config.ModConfig;
-import net.minecraftforge.fml.config.ModConfig.Type;
 import net.minecraftforge.fml.event.config.ModConfigEvent;
 import team.chisel.ctm.client.model.AbstractCTMBakedModel;
 
@@ -17,7 +16,7 @@ public class Configurations {
     public static final Configurations INSTANCE = new Configurations();
 
     public static void register(ModContainer modContainer, IEventBus modBus) {
-        modContainer.addConfig(new ModConfig(Type.CLIENT, INSTANCE.configSpec, modContainer, "ctm.toml"));
+        modContainer.addConfig(new ModConfig(ModConfig.Type.CLIENT, INSTANCE.configSpec, modContainer, "ctm.toml"));
     }
 
     @SubscribeEvent
@@ -35,7 +34,7 @@ public class Configurations {
         ForgeConfigSpec.Builder builder = new ForgeConfigSpec.Builder();
         disableCTM = builder.comment("Disable connected textures entirely").define("disableCTM", false);
         connectInsideCTM = builder.comment("Choose whether the inside corner is disconnected on a CTM block - http://imgur.com/eUywLZ4")
-              .define("connectInsideCTM", false);
+                .define("connectInsideCTM", false);
         configSpec = builder.build();
     }
 

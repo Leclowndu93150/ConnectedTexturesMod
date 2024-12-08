@@ -47,9 +47,10 @@ public class CTM {
 
         DistExecutor.unsafeRunWhenOn(Dist.CLIENT, () -> () -> {
             IEventBus modBus = FMLJavaModLoadingContext.get().getModEventBus();
+            ModContainer modContainer = ModList.get().getModContainerById(MOD_ID).get();
             modBus.addListener(this::modelRegistry);
             modBus.register(TextureMetadataHandler.INSTANCE);
-
+            Configurations.register(modContainer, modBus);
             TextureTypeRegistry.scan();
 
             definitionManager = new CTMDefinitionManager();

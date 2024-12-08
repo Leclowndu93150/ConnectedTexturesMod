@@ -103,7 +103,7 @@ public class TextureCustomCTM<T extends TextureTypeCustom> extends AbstractTextu
 
     private ISubmap getFallbackUvs() {
         //TODO: Is this the proper submap to use when not a proxy?
-        return isProxy ? type.getFallbackUvs() : Submap.X1;
+        return sprites.length == 1 ? type.getFallbackUvs() : Submap.X1;
     }
 
     @Override
