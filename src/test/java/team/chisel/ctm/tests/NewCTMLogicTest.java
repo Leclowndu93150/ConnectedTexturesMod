@@ -9,8 +9,8 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.Arrays;
 
-import net.neoforged.neoforge.client.model.pipeline.QuadBakingVertexConsumer;
-import net.neoforged.neoforge.client.model.pipeline.QuadBakingVertexConsumer.Buffered;
+import net.minecraftforge.client.model.pipeline.QuadBakingVertexConsumer;
+import net.minecraftforge.client.model.pipeline.QuadBakingVertexConsumer.Buffered;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 

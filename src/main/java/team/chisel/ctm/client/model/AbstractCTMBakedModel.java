@@ -14,9 +14,6 @@ import javax.annotation.ParametersAreNonnullByDefault;
 
 import net.minecraft.client.resources.model.ModelBakery;
 import net.minecraft.world.item.ItemDisplayContext;
-import net.neoforged.neoforge.client.RenderTypeHelper;
-import net.neoforged.neoforge.client.model.BakedModelWrapper;
-
 import com.google.common.base.Throwables;
 import com.google.common.cache.Cache;
 import com.google.common.cache.CacheBuilder;
@@ -50,9 +47,11 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.BlockAndTintGetter;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.state.BlockState;
-import net.neoforged.neoforge.client.ChunkRenderTypeSet;
-import net.neoforged.neoforge.client.model.data.ModelData;
-import net.neoforged.neoforge.client.model.data.ModelProperty;
+import net.minecraftforge.client.ChunkRenderTypeSet;
+import net.minecraftforge.client.RenderTypeHelper;
+import net.minecraftforge.client.model.BakedModelWrapper;
+import net.minecraftforge.client.model.data.ModelData;
+import net.minecraftforge.client.model.data.ModelProperty;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 import team.chisel.ctm.api.model.IModelCTM;

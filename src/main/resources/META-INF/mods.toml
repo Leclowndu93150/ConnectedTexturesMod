@@ -1,25 +1,22 @@
 modLoader="javafml"
-loaderVersion="[2,)"
+loaderVersion="[38,)"
 issueTrackerURL="https://github.com/Chisel-Team/ConnectedTexturesMod/issues/"
 license="GPL-2.0"
 
 [[mods]]
-    modId="ctm"
-    version="${file.jarVersion}"
-    displayName="ConnectedTexturesMod"
-    displayURL="https://chisel.team/ctm"
-    #logoFile="examplemod.png"
-    authors="tterrag, Drullkus, minecreatr"
-    description='''
+modId="ctm"
+version="${file.jarVersion}"
+displayName="ConnectedTexturesMod"
+displayURL="https://chisel.team/ctm"
+#logoFile="examplemod.png"
+authors="tterrag, Drullkus, minecreatr"
+description='''
     Allows resource packs to add connected textures, emissive rendering, and much more.
     '''
 
-[[mixins]]
-    config = "ctm.mixins.json"
-
 [[dependencies.ctm]]
-    modId="neoforge"
-    type="required"
-    versionRange="[20.4.213,)"
-    ordering="NONE"
-    side="BOTH"
+modId="forge"
+mandatory=true
+versionRange="[38.0.17,)"
+ordering="NONE"
+side="BOTH"

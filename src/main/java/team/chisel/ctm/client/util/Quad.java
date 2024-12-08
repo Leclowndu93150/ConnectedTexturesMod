@@ -8,6 +8,7 @@ import javax.annotation.ParametersAreNonnullByDefault;
 
 import net.minecraft.client.renderer.texture.OverlayTexture;
 import net.minecraft.util.Mth;
+import net.minecraftforge.client.model.pipeline.QuadBakingVertexConsumer;
 import org.jetbrains.annotations.NotNull;
 import org.joml.Vector3f;
 
@@ -24,7 +25,6 @@ import net.minecraft.core.Direction;
 import net.minecraft.core.Direction.Axis;
 import net.minecraft.world.phys.Vec2;
 import net.minecraft.world.phys.Vec3;
-import net.neoforged.neoforge.client.model.pipeline.QuadBakingVertexConsumer;
 import team.chisel.ctm.api.texture.ISubmap;
 
 @ParametersAreNonnullByDefault

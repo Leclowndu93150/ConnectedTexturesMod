@@ -17,8 +17,7 @@ import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.lighting.LevelLightEngine;
 import net.minecraft.world.level.material.FluidState;
-import net.neoforged.neoforge.client.model.data.ModelDataManager;
-import net.neoforged.neoforge.common.world.AuxiliaryLightManager;
+import net.minecraftforge.client.model.data.ModelDataManager;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
@@ -127,10 +126,11 @@ public class RegionCache implements BlockAndTintGetter {
         // can get their block's model data appropriately
         return getPassthrough().getModelDataManager();
     }
-
+    /*
     @Nullable
     @Override
     public AuxiliaryLightManager getAuxLightManager(ChunkPos pos) {
         return getPassthrough().getAuxLightManager(pos);
     }
+     */
 }
